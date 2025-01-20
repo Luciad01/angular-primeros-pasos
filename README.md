@@ -14,7 +14,9 @@ https://www.npmjs.com/package/uuid
 https://github.com/Klerith/angular-bases/tree/fin-seccion-5
 
 
-### Formas rápidas de hacer un despliegue real
+
+
+## Formas rápidas de hacer un despliegue real
 
 0. Generamos el build de producción:
 
@@ -22,7 +24,7 @@ https://github.com/Klerith/angular-bases/tree/fin-seccion-5
 ng build
 ```
 
-##### npm http server 
+#### npm http server 
 Paquete de node que sirve para probar y montar un
 servidor HTTP sin ninguna configuración, algo rápido pero con fines únicamente de pruebas y desarrollo local. No usar en producción. 
 
@@ -46,7 +48,7 @@ https://www.npmjs.com/package/http-server
   http-server -o
   ```
 
-#### netify
+### netify
 
 https://www.netlify.com/ 
 
@@ -58,6 +60,37 @@ https://www.netlify.com/
 3. Una vez creado el proyecto entramos en él y en el enlace que aparece.
 
 https://gleeful-unicorn-413f41.netlify.app/
+
+### GitHub pages
+
+1. Sacamos los archivos de browser a 'nameProject' y renombramos esta carpeta como 'docs'. Esta carpeta la sacamos al root de la aplicación. Debe quedar algo así:
+
+|- .angular |- (...)
+|
+|- .vscode |- (...)
+|
+|- docs |- browser (  )
+|       |- (...)
+|
+|- dist |- (  )
+|
+|- node_modules |- (...)
+|
+|- src |- (...)
+|
+|- (...)
+
+2. Cambiamos el base href en index.html por "./nameRepo".
+
+3. Creamos un nuevo repositorio y subimos el proyecto.
+
+4. Entramos en Settings > Pages y configuramos:
+- Deploy from a branch
+- 'main' y '/docs'. Guardamos ('Save').
+
+5. En Actions podremos ver el proceso de creación y si entramos tendremos la URL para acceder a la página cuando esté lista.
+
+https://luciad01.github.io/angular-primeros-pasos/
 
 
 
