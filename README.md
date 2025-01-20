@@ -12,6 +12,36 @@ Código fuente sección 5:
 https://github.com/Klerith/angular-bases/tree/fin-seccion-5
 
 
+FORMAS RÁPIDAS DE HACER UN DESPLIEGUE REAL:
+
+Generamos el build de producción:
+
+```bash
+ng build
+```
+
+1. npm http server - Paquete de node que sirve para probar y montar un
+servidor HTTP sin ninguna configuración, algo rápido pero con fines únicamente de pruebas y desarrollo local. No usar en producción. 
+
+Instalamos htt-server:
+
+```bash
+npm install --global htt-server
+```
+
+Entramos al browser:
+
+```bash
+cd '...02-bases/dist/nameProject/browser'
+```
+
+Ejecutar desde browser 'http-server -o'.
+https://www.npmjs.com/package/http-server
+
+2. netify
+https://www.netlify.com/
+
+
 ## Development server
 
 To start a local development server, run:
