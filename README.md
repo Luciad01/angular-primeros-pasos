@@ -5,41 +5,60 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ## Interesting Links
 
-UUID: Generar identificadores únicos con cierto formato.
+- UUID: Generar identificadores únicos con cierto formato.
+
 https://www.npmjs.com/package/uuid 
 
-Código fuente sección 5: 
+- Código fuente sección 5.
+
 https://github.com/Klerith/angular-bases/tree/fin-seccion-5
 
 
-FORMAS RÁPIDAS DE HACER UN DESPLIEGUE REAL:
+### Formas rápidas de hacer un despliegue real
 
-Generamos el build de producción:
+0. Generamos el build de producción:
 
 ```bash
 ng build
 ```
 
-1. npm http server - Paquete de node que sirve para probar y montar un
+##### npm http server 
+Paquete de node que sirve para probar y montar un
 servidor HTTP sin ninguna configuración, algo rápido pero con fines únicamente de pruebas y desarrollo local. No usar en producción. 
 
-Instalamos htt-server:
-
-```bash
-npm install --global htt-server
-```
-
-Entramos al browser:
-
-```bash
-cd '...02-bases/dist/nameProject/browser'
-```
-
-Ejecutar desde browser 'http-server -o'.
 https://www.npmjs.com/package/http-server
 
-2. netify
-https://www.netlify.com/
+1. Instalamos htt-server:
+
+  ```bash
+  npm install --global htt-server
+  ```
+
+2. Entramos al browser:
+
+  ```bash
+  cd '...02-bases/dist/nameProject/browser'
+  ```
+
+3. Ejecutamos:
+
+  ```bash
+  http-server -o
+  ```
+
+#### netify
+
+https://www.netlify.com/ 
+
+1. Creamos una cuenta.
+
+2. En el espacio que pone " Want to deploy a new site without connecting to Git?
+ Drag and drop your site output folder here." Arrastramos la carpeta de 'browser'.
+
+3. Una vez creado el proyecto entramos en él y en el enlace que aparece.
+
+https://gleeful-unicorn-413f41.netlify.app/
+
 
 
 ## Development server
