@@ -28,7 +28,7 @@ servidor HTTP sin ninguna configuración, algo rápido pero con fines únicament
 
 https://www.npmjs.com/package/http-server
 
-1. Instalamos htt-server:
+1. Instalamos http-server:
 
   ```bash
   npm install --global htt-server
