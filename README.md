@@ -64,21 +64,22 @@ https://gleeful-unicorn-413f41.netlify.app/
 ### GitHub pages
 
 1. Sacamos los archivos de browser a 'nameProject' y renombramos esta carpeta como 'docs'. Esta carpeta la sacamos al root de la aplicación. Debe quedar algo así:
-
-|- .angular |- (...)
-|
-|- .vscode |- (...)
-|
-|- docs |- browser (  )
-|       |- (...)
-|
-|- dist |- (  )
-|
-|- node_modules |- (...)
-|
-|- src |- (...)
-|
-|- (...)
+  ```bash
+  |- .angular |- (...)
+  |
+  |- .vscode |- (...)
+  |
+  |- docs |- browser (  )
+  |       |- (...)
+  |
+  |- dist |- (  )
+  |
+  |- node_modules |- (...)
+  |
+  |- src |- (...)
+  |
+  |- (...)
+  ```
 
 2. Cambiamos el base href en index.html por "./nameRepo".
 
@@ -91,6 +92,13 @@ https://gleeful-unicorn-413f41.netlify.app/
 5. En Actions podremos ver el proceso de creación y si entramos tendremos la URL para acceder a la página cuando esté lista.
 
 https://luciad01.github.io/angular-primeros-pasos/
+
+
+## Scripts
+https://www.npmjs.com/package/copyfiles
+
+https://www.npmjs.com/package/del-cli
+
 
 
 
