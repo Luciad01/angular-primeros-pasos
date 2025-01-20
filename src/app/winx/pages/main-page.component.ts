@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core'
 import { Character } from '../interfaces/character.interface';
+import { WinxService } from '../services/winx.service';
 
 @Component({
   standalone: false,
@@ -8,15 +9,18 @@ import { Character } from '../interfaces/character.interface';
 })
 
 export class MainPageComponent {
+  constructor( private winxService: WinxService ) {  }
 
-  public characters: Character[] = [{
-    name: 'Bloom',
-    power: 7000
-  },{
-    name: 'Stella',
-    power: 9500
-  },{
-    name: 'Flora',
-    power: 3000
-  }];
+  get characters(): Character[] {
+    return [...this.winxService.characters];
+  }
+
+  onDeleteCharacter( id: string ): void {
+    this.winxService.deleteCharacterById( id );
+  }
+
+  onNewCharacter( characters: Character ): void {
+    this.winxService.addCharacter( characters );
+  }
+
 }

@@ -1,12 +1,22 @@
 <h1>Winx Main Page</h1>
 <hr>
 
+<!--
+  "( )" son eventos. Cuando queremos escuchar eventos.
+  "[ ]" so atributos. Cuando queremos mandar con Inputs
+    de padre a hijo o asignar a un atributos.
+-->
+
 <div class="row">
   <div class="col">
-    <winx-list [characterList]="characters"></winx-list>
-</div>
+    <!-- Atributo que manda main a list (P a H) -->
+    <winx-list (onDelete)="onDeleteCharacter($event)"
+    [characterList]="characters"></winx-list>
+  </div>
 
-<div class="col">
-  <winx-add-character></winx-add-character>
+  <div class="col">
+    <!-- Evento que quiero escuchar -- emisión evento nuevo personaje -->
+    <winx-add-character (onNewCharacter)="onNewCharacter($event)"></winx-add-character>
+  </div>
 </div>
 

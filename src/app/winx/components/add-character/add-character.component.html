@@ -1,5 +1,8 @@
 <h4>Agregar personaje:</h4>
-<form class="row">
+<form class="row" (ngSubmit)="emitCharacter()">
+  <!-- Para asociar un evento "()"; para aun atributo "[]". ngComponentOutlet=""
+  Para ambos [()] --> <!-- debemos importar FormsModule -->
+
   <input type="text"
     [(ngModel)]="character.name"
     name="name"
@@ -10,9 +13,18 @@
     [(ngModel)]="character.power"
     name="power"
     class="form-control mb-2"
-    placeholder="Potencia"
+    placeholder="Poder"
   >
-  <button type="submit" class="btn btn-primary">
+  <!-- <button type="submit" class="btn btn-primary" (click)="emitCharacter()"> -->
+    <button type="submit" class="btn btn-primary">
     Agregar
   </button>
+
+  <!-- <pre>{{character | json}}</pre> -->
+  <!-- Para viasulaizar el objeto, se pone el pipe + json:
+    {
+      "name": "",
+      "power": 0
+    } -->
+
 </form>

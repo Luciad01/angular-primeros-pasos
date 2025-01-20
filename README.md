@@ -2,6 +2,16 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
 
+
+## Interesting Links
+
+UUID: Generar identificadores únicos con cierto formato.
+https://www.npmjs.com/package/uuid 
+
+Código fuente sección 5: 
+https://github.com/Klerith/angular-bases/tree/fin-seccion-5
+
+
 ## Development server
 
 To start a local development server, run:
